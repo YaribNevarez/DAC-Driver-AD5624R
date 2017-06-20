@@ -6,7 +6,7 @@ The SPI initialization is done by the following function.
 ```C
 inline static void AD5624R_init_spi(void)
 {
-    while (!GET_POXI_SPI_TRANSMISSION_DONE);
+    while (!GET_ZYNQ_SPI_TRANSMISSION_DONE);
     SET_POXI_SPI_SLAVE_SELECT(ZYNQ_SPI_DAC_CS);
     SET_POXI_SPI_DATA_LENGTH(ZYNQ_SPI_DATA_LENGTH_24_BITS);
     SET_POXI_SPI_BAUD_RATE_DIVIDER(AD5624R_SPI_BAUD_RATE);
