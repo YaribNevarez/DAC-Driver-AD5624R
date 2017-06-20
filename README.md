@@ -43,6 +43,7 @@ The following code writes a value in channel A (it can be seen the options in th
 ```C
 Poxi_DAC->write_input_register(DAC_A, value);
 Poxi_DAC->update_DAC_register(DAC_A);
+```
 
 The following code turns off the DAC device. The second parameter corresponds bitwise to the four DAC channels.
 
