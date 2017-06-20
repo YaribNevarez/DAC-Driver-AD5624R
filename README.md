@@ -17,7 +17,7 @@ inline static void AD5624R_init_spi(void)
 
 It can be seen in the function that the SPI protocol setup, CPOL = 1, CPHA = 0, 24 bits. For more details regarding this implementation, it can be inferred from the code.
 
-The following code initialize the DAC device.
+The following code initializes the DAC device.
 ```C
 static AD5624R * Poxi_DAC = AD5624R_instance();
 Poxi_DAC->reset();
